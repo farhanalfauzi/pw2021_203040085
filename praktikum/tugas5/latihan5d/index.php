@@ -39,5 +39,3 @@ $pw_tubes_203040085 = query("SELECT * FROM gelang")
     </div>
 </body>
 </html>
-
-<!-- index -->
