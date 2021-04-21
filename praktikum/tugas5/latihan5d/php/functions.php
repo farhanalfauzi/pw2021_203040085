@@ -40,7 +40,7 @@ function tambah($data) {
 // fungsi untuk menghapus data
 function hapus($id) {
 	$conn = koneksi();
-	mysqli_query($conn, "DELETE FROM mahasiswa WHERE id = $id");
+	mysqli_query($conn, "DELETE FROM gelang WHERE id = $id");
 
 	return mysqli_affected_rows($conn);
 }

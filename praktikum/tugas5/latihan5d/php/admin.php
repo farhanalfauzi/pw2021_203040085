@@ -44,7 +44,7 @@ $gelang = query("SELECT * FROM gelang");
                     <td><?= $i; ?></td> 
                     <td>
                         <a href="ubah.php?id=<?= $gl['id']?>""><button>Ubah</button></a>
-                        <a href="hapus.php?id=<? $gl['id'] ?>" onclick="return confirm('Hapus Data??')"><button>Hapus</button></a>
+                        <a href="hapus.php?id=<?= $gl['id']?>" onclick="return confirm('Hapus Data??')"><button>Hapus</button></a>
                     </td>
                     <td><img src="../assets/img/<?= $gl["Picture"]; ?>"></td>
                     <td><?= $gl["Product Name"] ?></td>
