@@ -43,8 +43,8 @@ $gelang = query("SELECT * FROM gelang");
                 <tr>
                     <td><?= $i; ?></td> 
                     <td>
-                        <a href=""><button>Ubah</button></a>
-                        <a href=""><button>Hapus</button></a>
+                        <a href=""><button style="background-color: black; color: white;">Ubah</button></a>
+                        <a href=""><button style="background-color: black; color: white;">Hapus</button></a>
                     </td>
                     <td><img src="../assets/img/<?= $gl["Picture"]; ?>"></td>
                     <td><?= $gl["Product Name"] ?></td>

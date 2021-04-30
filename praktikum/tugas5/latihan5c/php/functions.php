@@ -23,7 +23,7 @@ function tambah($data) {
 	$conn = koneksi();
 
 	$picture = htmlspecialchars($data['picture']);
-	$productname = htmlspecialchars($data['product name']);
+	$productname = htmlspecialchars($data['productname']);
 	$description = htmlspecialchars($data['description']);
 	$price = htmlspecialchars($data['price']);
 	$category = htmlspecialchars($data['category']);

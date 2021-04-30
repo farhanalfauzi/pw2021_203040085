@@ -27,6 +27,9 @@ $gelang = query("SELECT * FROM gelang");
     </style>
 </head>
 <body>
+    <div class="add">
+        <a href="tambah.php"><button style="background-color: red; color: white;">Tambah Data</button></a>
+    </div>
     <div class="table">
         <table border="1" cellspacing="0" cellpadding="5">
             <tr>
@@ -43,8 +46,8 @@ $gelang = query("SELECT * FROM gelang");
                 <tr>
                     <td><?= $i; ?></td> 
                     <td>
-                        <a href=""><button>Ubah</button></a>
-                        <a href=""><button>Hapus</button></a>
+                        <a href=""><button style="background-color: black; color: white;">Ubah</button></a>
+                        <a href=""><button style="background-color: black; color: white;">Hapus</button></a>
                     </td>
                     <td><img src="../assets/img/<?= $gl["Picture"]; ?>"></td>
                     <td><?= $gl["Product Name"] ?></td>
@@ -55,9 +58,7 @@ $gelang = query("SELECT * FROM gelang");
                 <?php $i++ ?>
             <?php endforeach; ?>
 
-            <div class="add">
-                <a href="tambah.php">Tambah Data</a>
-            </div>
+            
         </table>
     </div>
 </body>

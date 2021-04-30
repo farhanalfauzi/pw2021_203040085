@@ -24,8 +24,8 @@ if (isset($_POST['tambah'])) {
             <input type="file" name="picture" id="picture" required><br><br>
         </li>
         <li>
-            <label for="product name">Product Name</label><br>
-            <input type="text" name="product name" id="product name" required><br><br>
+            <label for="productname">Product Name</label><br>
+            <input type="text" name="productname" id="productname" required><br><br>
         </li>
         <li>
             <label for="description">Description</label><br>
@@ -37,7 +37,12 @@ if (isset($_POST['tambah'])) {
         </li>
         <li>
             <label for="category">Category</label><br>
-            <input type="category" name="category" id="category" required><br><br>
+            <select name="category" id="category"  required>
+                <option value="">------- Select a Category -------</option>
+                <option value="Gelang Tenun Etnik">Tenun Etnik</option>
+                <option value="Gelang Simple Paracord">Simple Paracord</option>
+                <option value="Gelang Simple Prusik">Simple Prusik</option>
+            </select>
         </li>
         <br>
         <button type="submit" name="tambah">Tambah Data!</button>
