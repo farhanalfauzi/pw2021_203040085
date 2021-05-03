@@ -8,7 +8,7 @@ Shift Kamis 8.00 - 9.00
 
 <?php
 require 'php/functions.php';
-$pw_tubes_203040085 = query("SELECT * FROM gelang")
+$gelang = query("SELECT * FROM gelang")
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ $pw_tubes_203040085 = query("SELECT * FROM gelang")
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan4c_203040085</title>
+    <title></title>
     <style>
         .container {
             width: 350px;
@@ -29,10 +29,10 @@ $pw_tubes_203040085 = query("SELECT * FROM gelang")
 </head>
 <body>
     <div class="container">
-            <?php foreach ($pw_tubes_203040085 as $glg) : ?>
+            <?php foreach ($gelang as $gl) : ?>
                 <p class="name">
-                    <a href="php/detail.php?id=<?= $glg['id']?>">
-                        <?= $glg["Product Name"] ?>
+                    <a href="php/detail.php?id=<?= $gl['id']?>">
+                        <?= $gl["Product Name"] ?>
                     </a>
                 </p>
             <?php endforeach; ?>
