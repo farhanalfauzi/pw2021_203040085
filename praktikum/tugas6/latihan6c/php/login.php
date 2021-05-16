@@ -1,14 +1,13 @@
 <?php
 session_start();
 require 'functions.php';
-
 // cek cookie
 if (isset($_COOKIE['username']) && isset($_COOKIE['hash'])) {
     $username = $_COOKIE['username'];
     $hash = $_COOKIE['hash'];
 
-    // ambil username bersadarkan id
-    $result = mysqli_query(koneksi(), "SELECT * FROM user WHERE username = '$username' ");
+    // ambil username berdasarkan id
+    $result = mysqli_query(koneksi(), "SELECT * FROM user WHERE username = '$username'");
     $row = mysqli_fetch_assoc($result);
 
     // cek cookie dan username
@@ -41,7 +40,7 @@ if (isset($_POST['submit'])) {
                 $hash = hash('sha256', $row['id']);
                 setcookie('hash', $hash, time() + 60 * 60 * 24);
             }
-            
+
             if (hash('sha256', $row['id']) == $_SESSION['hash']) {
                 header("Location: admin.php");
                 die;

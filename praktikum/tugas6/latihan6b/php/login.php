@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
         <tr>
             <td><label for="password">Password</label></td>
             <td>:</td>
-            <td><input type="text" name="password"></td>
+            <td><input type="password" name="password"></td>
         </tr>
     </table>
     <div class="remember">

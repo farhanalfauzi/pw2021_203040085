@@ -83,7 +83,7 @@ function ubah($data) {
 // fungsi untuk register
 function registrasi($data) {
 	$conn = koneksi();
-	$username = strtolower(stripslashes($data["username"]));
+	$username = strtolower(stripcslashes($data["username"]));
 	$password = mysqli_real_escape_string($conn, $data["password"]);
 
 	// cek username sudah ada atau belum
