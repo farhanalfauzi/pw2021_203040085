@@ -1,65 +1,51 @@
-<?php
+<?php 
+// menghubungkan dengan file php lainnya
 require 'functions.php';
+
+// melakukan query
 $gelang = query("SELECT * FROM gelang");
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin</title>
-    <style>
-        .table {
-            width: 100%;
-            padding: 10px;
-            font-family: arial;
-            text-align: center;
-        }
-        th {
-            background-color: black;
-            color: white;
-        }
-        img {
-            max-width: 150px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Document</title>
 </head>
 <body>
-    <div class="add">
-        <a href="tambah.php"><button style="background-color: red; color: white;">Tambah Data</button></a>
-    </div>
-    <div class="table">
-        <table border="1" cellspacing="0" cellpadding="5">
-            <tr>
-                <th>No</th>
-                <th>opsi</th>
-                <th>Picture</th>
-                <th>Product Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Category</th>
-            </tr>
-            <?php $i = 1;?>
-            <?php foreach($gelang as $gl) : ?>
-                <tr>
-                    <td><?= $i; ?></td> 
-                    <td>
-                        <a href=""><button style="background-color: black; color: white;">Ubah</button></a>
-                        <a href=""><button style="background-color: black; color: white;">Hapus</button></a>
-                    </td>
-                    <td><img src="../assets/img/<?= $gl["Picture"]; ?>"></td>
-                    <td><?= $gl["Product Name"] ?></td>
-                    <td><?= $gl["Description"] ?></td>
-                    <td><?= $gl["Price"] ?></td>
-                    <td><?= $gl["Category"] ?></td>
-                </tr>
-                <?php $i++ ?>
-            <?php endforeach; ?>
+  <div class="add">
+    <a href="tambah.php"><button>Tambah Data</button></a>
+  </div>
 
-            
-        </table>
-    </div>
+  <table border="1" cellpadding="13" cellspacing="0">
+    <tr>
+      <th>#</th>
+      <th>opsi</th>
+      <th>Gambar</th>
+      <th>Produk</th>
+      <th>Deskripsi</th>
+      <th>Harga</th>
+      <th>Kategori</th>
+    </tr>
+    <?php $i = 1; ?>
+    <?php foreach ($gelang as $g) : ?>
+      <tr>
+        <td><?= $i; ?></td>
+        <td>
+          <a href=""><button>Ubah</button></a>
+          <a href=""><button>Hapus</button></a>
+        </td>
+        <td><img src="../assets/img/<?= $g['gambar']; ?>" alt=""></td>
+        <td><?= $g['produk']; ?></td>
+        <td><?= $g['deskripsi']; ?></td>
+        <td><?= $g['harga']; ?></td>
+        <td><?= $g['kategori']; ?></td>
+      </tr>
+      <?php $i++; ?>
+    <?php endforeach; ?>
+  </table>
 </body>
 </html>

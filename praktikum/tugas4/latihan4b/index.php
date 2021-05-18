@@ -1,63 +1,41 @@
-<?php
-/*
-Farhan Alfauzi
-203040085
-Shift Kamis 8.00 - 9.00
-*/
-?>
-
-<?php
+<?php 
+// menghubungkan dengan file php lainnya
 require 'php/functions.php';
-$pw_tubes_203040085 = query("SELECT * FROM gelang")
-?>
 
+// melakukan query
+$gelang = query("SELECT * FROM gelang")
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan4b_203040085</title>
-    <style>
-        .table {
-            width: 100%;
-            padding: 10px;
-            font-family: arial;
-            text-align: center;
-        }
-        th {
-            background-color: black;
-            color: white;
-        }
-        img {
-            max-width: 150px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
 </head>
 <body>
-    <div class="table">
-        <table border="1" cellspacing="0" cellpadding="5">
-            <tr>
-                <th>No</th>
-                <th>Picture</th>
-                <th>Product Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Category</th>
-            </tr>
-            <?php $i = 1 ?>
-            <?php foreach ($pw_tubes_203040085 as $glg) : ?>
-                <tr>
-                    <td><?= $i ?></td> 
-                    <td><img src="assets/img/<?= $glg["Picture"]; ?>"></td>
-                    <td><?= $glg["Product Name"] ?></td>
-                    <td><?= $glg["Description"] ?></td>
-                    <td><?= $glg["Price"] ?></td>
-                    <td><?= $glg["Category"] ?></td>
-                </tr>
-                <?php $i++ ?>
-            <?php endforeach; ?>
-        </table>
-    </div>
+  <div class="container">
+    <table cellpadding="10" cellspacing="0" border="1">
+      <th>No</th>
+      <th>Gambar</th>
+      <th>Produk</th>
+      <th>Deskripsi</th>
+      <th>Harga</th>
+      <th>Kategori</th>
+      <?php $i = 1 ?>
+      <?php foreach ($gelang as $g) : ?>
+        <tr>
+          <td><?= $i ?></td>
+          <td><img src="assets/img/<?= $g["gambar"]; ?>"></td>
+          <td><?= $g["produk"]; ?></td>
+          <td><?= $g["deskripsi"]; ?></td>
+          <td><?= $g["harga"]; ?></td>
+          <td><?= $g["kategori"]; ?></td>
+        </tr>
+      <?php $i++ ?>
+      <?php endforeach; ?>
+    </table>
+  </div>
 </body>
 </html>

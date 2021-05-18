@@ -1,57 +1,70 @@
-<?php
+<?php 
 session_start();
+
 if (!isset($_SESSION["username"])) {
-    header("Location: login.php");
+  header("Location: login.php");
+  exit;
 }
 
 require 'functions.php';
 
 $id = $_GET['id'];
-$gl = query("SELECT * FROM gelang WHERE id = $id")[0];
+$g = query("SELECT * FROM gelang WHERE id = $id")[0];
 
 if (isset($_POST['ubah'])) {
-    if (ubah($_POST) > 0) {
-        echo "<script>
-                alert('Data berhasil diubah!');
-                document.location.href = 'admin.php';
-            </script>";
-    } else {
-        echo "<script>
-                alert('Data Gagal diubah!');
-                document.location.href = 'admin.php';
-            </script>";
-    }
+  if (ubah($_POST) > 0) {
+    echo "<script>
+            alert('Data Berhasil Diubah!');
+            document.location.href = 'admin.php';
+          </script>";
+  } else {
+    echo  "<script>
+            alert('Data Gagal Diubah!');
+            document.location.href = 'admin.php';
+          </script>";
+  }
 }
 ?>
 
-<h3>Form Ubah Data Gelang</h3>
-<form action="" method="post">
-    <input type="hidden" name="id" id="id" value="<?= $gl['id']; ?>">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>Form Ubah Data Gelang</h3>
+  <form action="" method="post">
+    <input type="hidden" name="id" id="id" value="<?= $g['id']; ?>">
     <ul>
-        <li>
-            <label for="picture">Picture</label><br>
-            <input type="text" name="picture" id="picture" required value="<?= $gl['Picture']; ?>"><br><br>
-        </li>
-        <li>
-            <label for="productname">Product Name</label><br>
-            <input type="text" name="productname" id="productname" required value="<?= $gl['Product Name']; ?>"><br><br>
-        </li>
-        <li>
-            <label for="description">Description</label><br>
-            <input type="description" name="description" id="description" required value="<?= $gl['Description']; ?>"><br><br>
-        </li>
-        <li>
-            <label for="price">Price</label><br>
-            <input type="price" name="price" id="price" required value="<?= $gl['Price']; ?>"><br><br>
-        </li>
-        <li>
-            <label for="category">Category</label><br>
-            <input type="category" name="category" id="category" required value="<?= $gl['Category']; ?>">
-        </li>
-        <br>
-        <button type="submit" name="ubah">Ubah Data!</button>
-        <button type="submit">
-            <a href="index.php" style="text-decoration: none; color: black;">Kembali</a>
-        </button>
+      <li>
+        <label for="gambar">Gambar :</label><br>
+        <input type="text" name="gambar" id="gambar" required value="<?= $g['gambar']; ?>"><br><br>
+      </li>
+      <li>
+        <label for="produk">Produk :</label><br>
+        <input type="text" name="produk" id="produk" required value="<?= $g['produk']; ?>"><br><br>
+      </li>
+      <li>
+        <label for="deskripsi">Deskripsi :</label><br>
+        <input type="deskripsi" name="deskripsi" id="deskripsi" required value="<?= $g['deskripsi']; ?>"><br><br>
+      </li>
+      <li>
+        <label for="harga">Harga :</label><br>
+        <input type="harga" name="harga" id="harga" required value="<?= $g['harga']; ?>"><br><br>
+      </li>
+      <li>
+        <label for="gambar">Kategori :</label><br>
+        <input type="kategori" name="kategori" id="kategori" required value="<?= $g['kategori']; ?>"><br><br>
+      </li>
+      <br>
+      <button type="submit" name="ubah">Ubah Data!</button>
+      <button type="submit">
+        <a href="../index.php" style="text-decoration: none; color: black;">Kembali</a>
+      </button>
     </ul>
-</form>
+  </form>
+</body>
+</html>
