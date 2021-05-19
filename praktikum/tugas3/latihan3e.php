@@ -9,75 +9,75 @@ Shift Kamis 8.00 - 9.00
 <?php
 $gelang = [
     [
-        "picture" => "1.jpg",
-        "name" => "Gelang Tenun Etnik",
-        "description" => "Terbuat dari tali tenun, cocok digunakan sehari-hari",
-        "price" => "Rp 15.000,00",
-        "category" => "Tenun Etnik",
+        "gambar" => "1.jpg",
+        "produk" => "Gelang Tenun Etnik",
+        "deskripsi" => "Terbuat dari tali tenun, cocok digunakan sehari-hari",
+        "harga" => "Rp 15.000,00",
+        "kategori" => "Tenun Etnik"
     ],
     [
-        "picture" => "2.jpg",
-        "name" => "Gelang Tenun Etnik",
-        "description" => "Terbuat dari tali tenun, cocok digunakan sehari-hari",
-        "price" => "Rp 15.000,00",
-        "category" => "Tenun Etnik",
+        "gambar" => "2.jpg",
+        "produk" => "Gelang Tenun Etnik",
+        "deskripsi" => "Terbuat dari tali tenun, cocok digunakan sehari-hari",
+        "harga" => "Rp 15.000,00",
+        "kategori" => "Tenun Etnik"
     ],
     [
-        "picture" => "3.jpg",
-        "name" => "Gelang Simple Paracord",
-        "description" => "Terbuat dari tali paracord 4mm, cocok digunakan sehari-hari",
-        "price" => "Rp 7.000,00",
-        "category" => "Simple Paracord",
+        "gambar" => "3.jpg",
+        "produk" => "Gelang Simple Paracord",
+        "deskripsi" => "Terbuat dari tali paracord 4mm, cocok digunakan sehari-hari",
+        "harga" => "Rp 7.000,00",
+        "kategori" => "Simple Paracord"
     ],
     [
-        "picture" => "4.jpg",
-        "name" => "Gelang Simple Paracord",
-        "description" => "Terbuat dari tali paracord 4mm, cocok digunakan sehari-hari",
-        "price" => "Rp 7.000,00",
-        "category" => "Simple Paracord",
+        "gambar" => "4.jpg",
+        "produk" => "Gelang Simple Paracord",
+        "deskripsi" => "Terbuat dari tali paracord 4mm, cocok digunakan sehari-hari",
+        "harga" => "Rp 7.000,00",
+        "kategori" => "Simple Paracord"
     ],
     [
-        "picture" => "5.jpg",
-        "name" => "Gelang Simple Paracord",
-        "description" => "Terbuat dari tali paracord 4mm, cocok digunakan sehari-hari",
-        "price" => "Rp 7.000,00",
-        "category" => "Simple Paracord",
+        "gambar" => "5.jpg",
+        "produk" => "Gelang Simple Paracord",
+        "deskripsi" => "Terbuat dari tali paracord 4mm, cocok digunakan sehari-hari",
+        "harga" => "Rp 7.000,00",
+        "kategori" => "Simple Paracord"
     ],
     [
-        "picture" => "6.jpg",
-        "name" => "Gelang Simple Paracord",
-        "description" => "Terbuat dari tali paracord 4mm, cocok digunakan sehari-hari",
-        "price" => "Rp 7.000,00",
-        "category" => "Simple Paracord",
+        "gambar" => "6.jpg",
+        "produk" => "Gelang Simple Paracord",
+        "deskripsi" => "Terbuat dari tali paracord 4mm, cocok digunakan sehari-hari",
+        "harga" => "Rp 7.000,00",
+        "kategori" => "Simple Paracord"
     ],
     [
-        "picture" => "7.jpg",
-        "name" => "Gelang Simple Paracord",
-        "description" => "Terbuat dari tali paracord 4mm, cocok digunakan sehari-hari",
-        "price" => "Rp 7.000,00",
-        "category" => "Simple Paracord",
+        "gambar" => "7.jpg",
+        "produk" => "Gelang Simple Paracord",
+        "deskripsi" => "Terbuat dari tali paracord 4mm, cocok digunakan sehari-hari",
+        "harga" => "Rp 7.000,00",
+        "kategori" => "Simple Paracord"
     ],
     [
-        "picture" => "8.jpg",
-        "name" => "Gelang Simple Paracord",
-        "description" => "Terbuat dari tali paracord 4mm, cocok digunakan sehari-hari",
-        "price" => "Rp 7.000,00",
-        "category" => "Simple Paracord",
+        "gambar" => "8.jpg",
+        "produk" => "Gelang Simple Paracord",
+        "deskripsi" => "Terbuat dari tali paracord 4mm, cocok digunakan sehari-hari",
+        "harga" => "Rp 7.000,00",
+        "kategori" => "Simple Paracord"
     ],
     [
-        "picture" => "9.jpg",
-        "name" => "Gelang Simple Prusik",
-        "description" => "Terbuat dari tali prusik 2mm, cocok digunakan sehari-hari",
-        "price" => "Rp 4.000,00",
-        "category" => "Simple Prusik",
+        "gambar" => "9.jpg",
+        "produk" => "Gelang Simple Prusik",
+        "deskripsi" => "Terbuat dari tali prusik 2mm, cocok digunakan sehari-hari",
+        "harga" => "Rp 4.000,00",
+        "kategori" => "Simple Prusik"
     ],
     [
-        "picture" => "10.jpg",
-        "name" => "Gelang Simple Prusik",
-        "description" => "Terbuat dari tali prusik 2mm, cocok digunakan sehari-hari",
-        "price" => "Rp 4.000,00",
-        "category" => "Simple Prusik",
-    ],
+        "gambar" => "10.jpg",
+        "produk" => "Gelang Simple Prusik",
+        "deskripsi" => "Terbuat dari tali prusik 2mm, cocok digunakan sehari-hari",
+        "harga" => "Rp 4.000,00",
+        "kategori" => "Simple Prusik"
+    ]
 ];
 ?>
 
@@ -108,22 +108,22 @@ $gelang = [
     <div class="table">
         <table border="1" cellspacing="0" cellpadding="5">
             <th>No</th>
-            <th>Picture</th>
-            <th>Product Name</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Category</th>
+            <th>Gambar</th>
+            <th>Produk</th>
+            <th>Deskripsi</th>
+            <th>Harga</th>
+            <th>Kategori</th>
             <tr></tr>
-            <?php $nomor = 1;?>
-            <?php foreach ($gelang as $gl) : ?>
-                <td><?= $nomor; ?></td> 
-                <td><img src="img/<?= $gl["picture"]; ?>"></td>
-                <td><?= $gl["name"] ?></td>
-                <td><?= $gl["description"] ?></td>
-                <td><?= $gl["price"] ?></td>
-                <td class = "categori"><?= $gl["category"] ?></td>
+            <?php $i = 1;?>
+            <?php foreach ($gelang as $g) : ?>
+                <td><?= $i; ?></td> 
+                <td><img src="img/<?= $g["gambar"]; ?>"></td>
+                <td><?= $g["produk"] ?></td>
+                <td><?= $g["deskripsi"] ?></td>
+                <td><?= $g["harga"] ?></td>
+                <td class = "kategori"><?= $g["kategori"] ?></td>
                 <tr></tr>
-                <?php $nomor++; ?>
+                <?php $i++; ?>
             <?php endforeach; ?>
         </table>
     </div>
