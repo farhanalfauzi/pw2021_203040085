@@ -1,0 +1,13 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.auth {
+  padding: 5px;
+  margin-top: 0.5rem;
+}
+
+.auth .card {
+  box-shadow: 8px 12px 18px 0 rgb(0, 0, 0, 0.7);
+  width: 20rem;
+}
