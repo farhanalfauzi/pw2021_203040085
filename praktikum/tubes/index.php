@@ -99,7 +99,7 @@ $gelang = query("SELECT * FROM gelang")
               <h2 class="center black-text"><i class="material-icons medium">location_on</i></h2>
               <h5 class="center">Lokasi Toko</h5>
 
-              <p class="center">Jalan Raya Kosambi Gg. Masijd Al-Falah No.60, Kab. Karawang, Prov. Jawa Barat</p>
+              <p class="center">Jalan Raya Kosambi Gg. Masijd Al-Falah No.60<br>Kab. Karawang, Prov. Jawa Barat</p>
             </div>
           </div>
 
@@ -108,7 +108,7 @@ $gelang = query("SELECT * FROM gelang")
               <h2 class="center black-text"><i class="material-icons medium">group</i></h2>
               <h5 class="center">Tim Kerja</h5>
 
-              <p class="center">@cirengisi.montok & @vanyu.coffee</p>
+              <p class="center">@cirengisi.montok<br>@vanyu.coffee</p>
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@ $gelang = query("SELECT * FROM gelang")
         <div class="row">
           <div class="col l6 s12">
             <h5 class="white-text">Bio Toko</h5>
-            <p class="grey-text text-lighten-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem atque excepturi expedita laudantium, amet magnam error quibusdam dignissimos tempora harum sit non qui? Ipsa necessitatibus exercitationem, adipisci dolor aspernatur vero voluptatum, voluptate deleniti doloremque animi ut! Optio eligendi libero voluptatum, omnis ad veritatis nisi totam molestias. Temporibus minima laboriosam ratione.</p>
+            <p class="grey-text text-lighten-4">Kami memproduksi berbagai jenis gelang yang terbuat dari 3 jenis tali seperti tali prusik, tali paracord, dan tali tenun. Gelang ini sangat cocok digunakan untuk kegiatan sehari-hari. Kami pun menjual dengan harga yang terjangkau.<br>Terima kasih telah mengunjungi website Kami.</p>
 
 
           </div>
@@ -153,6 +153,7 @@ $gelang = query("SELECT * FROM gelang")
             <h5 class="white-text">Media Sosial</h5>
             <ul>
               <li>Instagram: @hanstore.krw</li>
+              <li>WA: +62 821 2218 3133</li>
             </ul>
           </div>
         </div>

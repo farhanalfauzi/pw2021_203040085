@@ -130,16 +130,16 @@ if (isset($_POST['cari'])) {
         <!-- end tombol cari -->
 
         <!-- tabel -->
-        <div class="container center">
+        <div class="tabel container center">
           <table border="1" cellpadding="13" cellspacing="0">
             <tr class="judul-kolom">
-              <th>#</th>
-              <th>opsi</th>
-              <th>Gambar</th>
-              <th>Produk</th>
-              <th>Deskripsi</th>
-              <th>Harga</th>
-              <th>Kategori</th>
+              <th class="center">#</th>
+              <th class="center">opsi</th>
+              <th class="center">Gambar</th>
+              <th class="center">Produk</th>
+              <th class="center">Deskripsi</th>
+              <th class="center">Harga</th>
+              <th class="center">Kategori</th>
             </tr>
 
             <?php if(empty($gelang)) : ?>
